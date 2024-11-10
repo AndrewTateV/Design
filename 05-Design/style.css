@@ -1,0 +1,284 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+/* */
+/*
+                 字体部分
+第一张图片：使用良好的字体 (Use Good Typefaces)
+使用知名且常用的字体：
+
+选择流行且质量高的字体，保持安全和专业，避免使用不太常见的字体可能引起的兼容性问题。
+每页使用一种字体，最多两种：
+
+为了保持简洁和一致性，建议一页只使用一种字体。如果需要更多，可以最多使用两种字体。过多的字体可能会导致页面混乱。
+根据网站的个性选择合适的字体：
+
+选择正确的个性：字体会影响网站的视觉印象，因此要根据网站的品牌形象来选择合适的字体。
+选择衬线字体还是非衬线字体：根据网站风格选择。一般来说，衬线字体（serif）给人传统、经典的感觉，适合正式或高端的内容；而无衬线字体（sans-serif）看起来简洁、现代，更适合科技和现代设计。
+尝试各种字体：尤其是 Google Fonts 中的高质量字体，尝试哪种字体最适合网站的风格和信息。
+随着设计的进行尝试不同字体：你可以在设计和构建页面的过程中不断尝试不同的字体，以找到最适合的。
+第二张图片：使用合适的字体大小和粗细 (Use Good Font Sizes and Weights)
+选择字体大小时限制选择：
+
+使用 "type scale" 工具或预先定义的字号范围来选择大小，以保持整体的一致性。
+正常文字的字体大小在 16px 到 32px 之间：
+
+正常的正文文字建议使用这个范围的字体大小，以保证可读性和舒适度。
+长文本（例如博客文章）使用至少 20px 或更大的字体：
+
+对于长时间阅读的内容，较大的字体可以提升阅读体验，减轻眼睛疲劳。
+标题使用较大的字体和较粗的字体：
+
+标题可以使用超过 50px 的字体大小，且字体粗细可以在 600+（加粗）以上，这取决于标题的个性和内容的吸引力。
+不要使用低于 400 的字体粗细：
+
+避免使用过细的字体（比如 100 或 200），这类字体在屏幕上可能会不够清晰，尤其是对年长者或阅读有困难的用户。
+第三张图片：创造良好的阅读体验 (Create a Good Reading Experience)
+每行少于 75 个字符：
+
+这有助于提升阅读体验，行太长会导致眼睛疲劳，使读者难以顺畅地回到下一行。
+正常文字的行高在 1.5 到 2 之间：
+
+对于普通大小的文字，建议行高设置在 1.5 到 2 之间。对于较大的文字，行高可以略小于 1.5，以保持视觉上的紧凑感和一致性。
+减少标题中的字间距，如果看起来不自然：
+
+对于标题，如果字间距过大或不自然，可能会影响整体效果，可以通过减小字间距来调整。
+对短标题尝试全大写：
+
+对于简短的标题，可以尝试使用全大写（all caps），但要保持字母较小、字间距略紧，并加粗来增加影响力。
+通常不要对齐文本：
+
+避免使用强制对齐（justified），因为这会导致文本之间出现不均匀的空格，影响阅读体验。
+不要将长文本块居中：
+
+对于长段文本，居中对齐可能会降低可读性。小块文本居中是可以接受的，但长段落会使读者难以找到下一行的起点。 */
+
+
+/*     颜色部分
+使用contrast colors  */
+/* 
+MAIN COLOR: #087f5b
+GREY COLOR: #343a40
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header,
+section {
+  margin-bottom: 96px;
+}
+
+h2 {
+  margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+
+img{
+
+border-radius: 12px;
+
+
+}
+
+
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+/* HEADER */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 64px;
+}
+
+.header-text-box {
+  align-self: center;
+}
+
+h1 {
+  margin-bottom: 32px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.header-text {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+}
+
+/* FEATURES */
+.features-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 24px;
+}
+
+.features-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.features-text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.testimonial-box {
+  grid-column: 2 / -1;
+  align-self: center;
+}
+
+.testimonial-box h2 {
+  margin-bottom: 24px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: ##e6fcf5;
+}
+.testimonial-author {
+  color: #c3fae8;
+}
+/* CHAIRS */
+/* box-shadow: offset-x offset-y blur-radius spread-radius color;
+ offset-x：阴影在水平方向上的偏移量。可以是正值或负值，正值表示向右，负值表示向左。
+offset-y：阴影在垂直方向上的偏移量。可以是正值或负值，正值表示向下，负值表示向上。
+blur-radius（可选）：阴影的模糊半径。值越大，阴影越模糊。默认为 0，即没有模糊。
+spread-radius（可选）：阴影的扩展半径。正值表示扩展阴影，负值表示收缩阴影。
+color（可选）：阴影的颜色。如果不指定颜色，默认会使用元素的文本颜色。
+inset（可选）：用于创建内阴影。如果省略 inset，则阴影是外部阴影。*/
+
+
+
+.chair {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.chair-box {
+  padding: 32px;
+ 
+}
+
+h3 {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.chair-details {
+  list-style: none;
+  margin-bottom: 48px;
+}
+
+.chair-details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.chair-details li:last-child {
+  margin-bottom: 0;
+}
+
+/* stroke icon的颜色
+fill icon内部颜色 */
+.chair-icon {
+  stroke: #087f5b;
+  /* fill: red; */
+   width: 24px;
+   height: 24px;
+}
+
+.chair-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+}
+
+footer {
+  margin-bottom: 48px;
+  font-size: 14px;
+  color: #495057;
+}
